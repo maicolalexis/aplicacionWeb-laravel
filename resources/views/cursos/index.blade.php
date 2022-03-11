@@ -20,13 +20,11 @@ usando la doble llave --}}
                         <img src="{{ Storage::url($co->img) }}" class="card-img-top" alt="..." style="width: 50%;">
                     </center>
                     <div class="card-body">
-                        <li class="list-group-item">{{ $co->id }}</li>
                         <li class="list-group-item">{{ $co->nombre }}</li>
-                        <li class="list-group-item">{{ $co->description }}</li>
-                        <li class="list-group-item">{{ $co->created_at }}</li>
-                        <li class="list-group-item">{{ $co->updated_at }}</li>
+
                         <br>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                        {{--se necesita el id para un registro en particular--}}
+                        <a href="/cursos/{{$co->id}}" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
